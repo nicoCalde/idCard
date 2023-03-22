@@ -35,7 +35,7 @@
     display: flex;
     padding: 0;
     width: 60px;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 10px;
     border-radius: 100%;
 }
@@ -229,7 +229,7 @@
 /* HOME */
 /* Banner */
 body{
-    background-image: url('../assets/img/brick-wall-painted-white.jpg');
+    background-image: url('../assets/img/fondo-idcard.png');
     background-position: center top;
     background-attachment: fixed;
     background-size: cover;
