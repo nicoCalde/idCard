@@ -9,11 +9,18 @@
 /* Top Nav */
   
 .topNav{
-    background: none;
+    background-color: none;
     position: fixed;
     width: 100%;
     padding: 0 20%;
     z-index: 3;
+    transition: all 0.5s ;
+}
+
+.topNav.active{
+    background-color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
 }
   
 .topNav ul{
@@ -407,33 +414,53 @@ body{
 /* FOOTER */
 .footer{
     background-color: black;
-    padding: 70px 20%;
+    padding: 70px 20% 10px 20%;
     color: white;
 }
 
 .footerContainer{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
 
 .footerCol h4{
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .footerCol h4 b{
     font-weight: 500;
 }
 
-.footerCol h4::before{
-    content: '';
+.lineFooter {
+    height: 1px;
+    width: 120px;
+    background: white;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.lineFooter:before {
+    display: block;
+    height: 100%;
+    width: 50%;
+    background: white;
     position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: white;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
+    content: "";
+    top: 5px;
+    transform:translate(0,0);
+}
+
+.lineFooter:after {
+    display: block;
+    height: 100%;
+    width: 50%;
+    background: white;
+    position: absolute;
+    content: "";
+    top: -5px;
+    transform:translate(0,0);
 }
 
 .footerCol ul{
@@ -450,6 +477,8 @@ body{
     color: white;
     display: block;
     transition: all 0.3s ease;
+    display: inline;
+    margin-left: 10px;
 }
 
 .footerCol ul li a:hover{
@@ -478,19 +507,36 @@ body{
     background-color: white;
 }
 
+.container{
+    display: grid;
+    justify-content: center;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+.copyright b{
+    font-weight: 500;
+}
+
+.credits{
+    margin: auto;
+}
+
+.credits a{
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (max-width:1024px){
-    footer {
-        padding: 0 10%;
+    .footer {
+        padding: 70px 10% 10px 10%;
     }
     
-    .footerContainer{
-        justify-content: space-between;
-    }
 }
 
 @media screen and (max-width:768px){
     .footer {
-        padding: 70px 5%;
+        padding: 70px 5% 10px 5%;
     }
 
     .footerContainer{
