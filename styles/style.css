@@ -97,6 +97,8 @@
     /* Menu & Icon */
     .topNav{
         padding: 0 10%;
+        /* background: white;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
     }
 
     .topNav ul{
@@ -195,7 +197,7 @@
     #myPicture{
         width: 60px;
         margin-top: 10px;
-        margin-left: 5px;
+        margin-left: 0;
         margin-right: 3px;
     }
 
@@ -312,6 +314,7 @@ body{
 /* ABOUT */
 .about{
     background-color: white;
+    height: 565px;
 }
 
 .title h3{
@@ -368,14 +371,129 @@ body{
     font-weight: 500;
 }
 
+.row p{
+    margin-bottom: 35px;
+}
+
+.row a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 20px 20px;
+    font-weight: 500;
+    margin-bottom: 75px;
+}
+
 @media screen and (max-width:1024px){
     .row {
         margin: 50px 10%;
     }
+
 }
 
 @media screen and (max-width:768px){
+    .about{
+        width: 100%;
+        height: 650px;
+    }
+
     .row {
         margin: 50px 5%;
+    }
+
+}
+
+/* FOOTER */
+.footer{
+    background-color: black;
+    padding: 70px 20%;
+    color: white;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerCol h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.footerCol h4 b{
+    font-weight: 500;
+}
+
+.footerCol h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: white;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footerCol ul{
+    list-style: none;
+}
+
+.footerCol ul li:not(last-child){
+    margin-bottom: 20px;
+}
+
+.footerCol ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footerCol ul li a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    text-decoration-style:solid;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+}
+  
+.footerCol .socialLinks a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: rgba( 255, 255, 255, 0.2);
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+  
+.footerCol .socialLinks a:hover{
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width:1024px){
+    footer {
+        padding: 0 10%;
+    }
+    
+    .footerContainer{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:768px){
+    .footer {
+        padding: 70px 5%;
+    }
+
+    .footerContainer{
+        display: block;
     }
 }
