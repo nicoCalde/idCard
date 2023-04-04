@@ -104,7 +104,7 @@
 }
 
 /* Hamburger Menu */
-@media screen and (max-width:1024px){
+@media screen and (max-width:1200px){
     /* Menu & Icon */
     .topNav{
         padding: 0 10%;
@@ -267,7 +267,7 @@
     }
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1200px){
     .bannerContent{
         height: 600px;
         padding-left: 10%;
@@ -297,7 +297,7 @@
     }
 }
 
-/* ABOUT */
+/* ABOUT AFTER BANNER */
 .about{
     background-color: white;
     height: 565px;
@@ -371,7 +371,7 @@
     margin-bottom: 75px;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1200px){
     .row {
         margin: 50px 10%;
     }
@@ -506,7 +506,7 @@
     color: white;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1200px){
     .footer {
         padding: 70px 10% 10px 10%;
     }
@@ -556,7 +556,7 @@
     margin: 0 20%; 
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1200px){
     .aboutMe{
         margin: 50px 10%;
         display: block;
@@ -576,6 +576,12 @@
     .aboutMe{
         margin: 50px 5%;
         display: block;
+    }
+
+    .languajes{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
     }
 
     .button{
