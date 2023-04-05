@@ -631,3 +631,83 @@
 }
 
 /* WORKS */
+
+/* EDUCATION */
+
+/* CONTACT */
+.contactContainer{
+    margin: 50px 20%;
+    display: grid;
+}
+
+.contactContainer h4 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.contactContainer h4 b {
+    font-weight: 500;
+}
+
+.contactContainer form{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+input[type=text],input[type=email]{
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#contactSubject {
+    grid-column: 1 / 3;
+}
+
+#contactMessage {
+    grid-column: 1 / 3;
+    padding: 12px 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contactContainer button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px 35px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1200px){
+    .contactContainer{
+        margin: 50px 10%;
+    }
+
+    .contactContainer form{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    #contactSubject {
+        grid-column: 1 / 2;
+    }
+    
+    #contactMessage {
+        grid-column: 1 / 2;
+    }
+}
+
+@media screen and (max-width:768px){
+    .contactContainer{
+        margin: 50px 5%;
+    }
+}
