@@ -524,8 +524,36 @@
 }
 
 /* ABOUT */
-.aboutMe{
+.skills{
     margin: 50px 20%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    row-gap: 50px;
+    column-gap: 15px;
+}
+
+.skill{
+    display: grid;
+    grid-template-columns: auto 85%;
+    row-gap: 10px;
+}
+
+.skill h4{
+    font-size: 25px;
+}
+
+.skill h4 b{
+    font-weight: 500;
+}
+
+.fontA{
+    grid-row: 1/3;
+    grid-column: 1/2;    
+}
+
+.aboutMe{
+    margin: 0 20%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -557,8 +585,11 @@
 }
 
 @media screen and (max-width:1200px){
-    .aboutMe{
+    .skills{
         margin: 50px 10%;
+    }
+    .aboutMe{
+        margin: 0px 10%;
         display: block;
     }
 
@@ -588,3 +619,5 @@
         margin: 0 5%;
     }
 }
+
+/* WORKS */
