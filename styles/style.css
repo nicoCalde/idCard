@@ -58,6 +58,7 @@
 .myPictureContent b{
     font-weight: 500;
 }
+
   
 .topNav #menuButton{
     display: none;
@@ -72,6 +73,7 @@
 .myPictureContent p{
     font-size: 1rem;
     color: black;
+    font-size: 14px;
 }
 
 .topNav ul a:hover{
@@ -304,7 +306,7 @@
 /* ABOUT AFTER BANNER */
 .about{
     background-color: white;
-    height: 565px;
+    height: auto;
 }
 
 .title h3{
@@ -372,7 +374,7 @@
     background-color: black;
     padding: 20px 20px;
     font-weight: 500;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width:1200px){
@@ -385,7 +387,7 @@
 @media screen and (max-width:768px){
     .about{
         width: 100%;
-        height: 650px;
+        height: auto;
     }
 
     .row {
