@@ -16,7 +16,7 @@ clickNav.addEventListener('click', (e)=>{
 
 // works modal
 const galleryItems = document.querySelectorAll('.galleryItem');
-const modal = document.querySelector('#modal');
+const modal = document.getElementById('modal');
 const modalTitle = document.getElementById('modal-title');
 const modalDescription = document.getElementById('modal-description');
 const closeButton = document.querySelector('.close');
@@ -24,7 +24,7 @@ const closeButton = document.querySelector('.close');
 galleryItems.forEach((item, index) => {
     const viewProjectButton = item.querySelector('.btnGallery');
     viewProjectButton.addEventListener('click', (e) => {
-        e.stopPropagation();
+        e.preventDefault(); // Prevent event propagation to parent elements
         modalTitle.textContent = `PROJECT TITLE ${index + 1}`;
         modalDescription.textContent = `This is the description for Project ${index + 1}. Lorem ipsum dolor sit amet...`;
         modal.style.display = 'block';
