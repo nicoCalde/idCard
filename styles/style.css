@@ -552,7 +552,113 @@
 }
 
 /* WORKS */
+.works {
+    margin: 0 20% 0;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+  }
+  
+.galleryItem {
+position: relative;
+overflow: hidden;
+}
 
+.galleryItem img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.galleryOverlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.7);
+color: white;
+padding: 20px;
+opacity: 0;
+transition: opacity 0.3s ease;
+text-align: center;
+}
+
+.galleryItem:hover .galleryOverlay {
+opacity: 1;
+}
+
+.galleryOverlay h4 {
+margin: 0;
+font-size: 1.5rem;
+}
+
+.galleryOverlay p {
+margin: 10px 0;
+}
+
+.btnGallery {
+display: inline-block;
+padding: 5px 10px;
+border: 2px solid white;
+color: white;
+text-decoration: none;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btnGallery:hover {
+background-color: white;
+color: black;
+}
+
+/* Styles for the modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 25%;
+    top: 150px;
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px){
+    .works{
+        margin: 0px 10%;   
+    }   
+}
+
+@media screen and (max-width:768px){
+    .works{
+        margin: 50px 5%;
+        display: block;
+    }
+}
 
 /* EDUCATION */
 .educationContainer{

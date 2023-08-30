@@ -14,4 +14,30 @@ clickNav.addEventListener('click', (e)=>{
     topNav.classList.add('active');
 })
 
+// works modal
+const galleryItems = document.querySelectorAll('.galleryItem');
+const modal = document.querySelector('#modal');
+const modalTitle = document.getElementById('modal-title');
+const modalDescription = document.getElementById('modal-description');
+const closeButton = document.querySelector('.close');
+
+galleryItems.forEach((item, index) => {
+    const viewProjectButton = item.querySelector('.btnGallery');
+    viewProjectButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        modalTitle.textContent = `PROJECT TITLE ${index + 1}`;
+        modalDescription.textContent = `This is the description for Project ${index + 1}. Lorem ipsum dolor sit amet...`;
+        modal.style.display = 'block';
+    });
+});
+
+closeButton.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
 
