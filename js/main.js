@@ -26,7 +26,7 @@ galleryItems.forEach((item, index) => {
     viewProjectButton.addEventListener('click', (e) => {
         e.preventDefault(); // Prevent event propagation to parent elements
         modalTitle.textContent = `PROJECT TITLE ${index + 1}`;
-        modalDescription.textContent = `This is the description for Project ${index + 1}. Lorem ipsum dolor sit amet...`;
+        modalDescription.textContent = `This is the description for Project ${index + 1}. Lorem ipsum dolor sit amet... lakslas lk lkal klak lak lkls klaklska  l kl kslakl ksal klsklk sla l    lasl ask lakslaksl al al lskal ksla sl ls la lskal sklaks lak lsakl`;
         modal.style.display = 'block';
     });
 });
