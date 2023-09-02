@@ -84,7 +84,7 @@
     text-underline-offset: 5px;   
 }
   
-@media (min-width:1025px){
+@media (min-width:1601px){
     .topNav li{
     float: left;
     }
@@ -106,7 +106,7 @@
 }
 
 /* Hamburger Menu */
-@media screen and (max-width:1200px){
+@media screen and (max-width:1600px){
     /* Menu & Icon */
     .topNav{
         padding: 0 10%;
