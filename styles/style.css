@@ -605,32 +605,32 @@
   }
   
 .galleryItem {
-position: relative;
-overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .galleryItem img {
-width: 100%;
-height: 100%;
-object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .galleryOverlay {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: rgba(159,156,151,.8);
-color: white;
-padding: 20px;
-opacity: 0;
-transition: opacity 0.3s ease;
-text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(159,156,151,.8);
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
 }
 
 .galleryItem:hover .galleryOverlay {
@@ -727,7 +727,13 @@ text-align: center;
 
 @media screen and (max-width:1600px){
     .works{
-        margin: 0px 10%;   
+        margin: 0px 10%;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;  
+    }
+
+    .galleryItem {
+        max-width: 100%;
     }
 
     .modal-content {
@@ -739,7 +745,8 @@ text-align: center;
 @media screen and (max-width:768px){
     .works{
         margin: 50px 5%;
-        display: block;
+        /* display: block; */
+        grid-row-gap: 20px;
     }
 
     .modal-content {
