@@ -26,21 +26,21 @@ const modalProjects = [
     {
         title: "Interactive Map",
         skills: "#React.js#GoogleMapsPlatform",
-        src: "./assets/img/modal/mapai.png",
+        src: "./assets/img/modal/AHRCC Mapa Interactivo.png",
         description: "The project involved the development of a sophisticated website designed to showcase the various establishments affiliated with the AHRCC in Buenos Aires City. The primary objective was to create an interactive map that allowed users to explore and discover hotels, bars, cafés, and restaurants associated with the organization.",
         link: "https://nicocalde.github.io/mapai/"
     },
     {
         title: "Get-Films",
         skills: "#React.js#Sass#TMDbAPI",
-        src: "./assets/img/modal/get-films.png",
+        src: "./assets/img/modal/Get-Films.png",
         description: "Get-Films is a personal project developed to enhance my skills in web development while also learning about React, API integration, styling with SASS, and backend implementation with Firebase. The project aimed to create a streaming platform resembling Netflix, where users could discover and watch a wide range of movies and TV shows.",
         link: "https://nicocalde.github.io/23304-grupo1-getfilms/"
     },
     {
         title: "recetARIO.",
         skills: "#Django#REST#MySQL",
-        src: "./assets/img/modal/recetario.png",
+        src: "./assets/img/modal/recetARIO.png",
         description: "The Recipe Creator Website was a personal project undertaken to enhance programming skills and gain practical experience in web development using Python and the Django framework. The project's primary aim was to create an interactive and user-friendly platform where users could discover, share, and create their own recipes, while simultaneously serving as a practical learning opportunity to delve deeper into backend development and database management.",
         link:"http://caldegol.pythonanywhere.com/"
     },
@@ -54,7 +54,7 @@ const modalProjects = [
     {
         title: "TodoApp",
         skills: "#HTML#CSS#js",
-        src: "./assets/img/modal/todoapp.png",
+        src: "./assets/img/modal/todolists.png",
         description: "TodoApp was a project undertaken to solidify and master your skills in JavaScript by creating a functional and user-friendly website for managing to-do lists. The primary objective of the project was to gain a deeper understanding of JavaScript programming concepts while providing a practical solution for organizing tasks.",
         link: "https://nicocalde.github.io/todoApp/"
     }
