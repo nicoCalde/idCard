@@ -678,6 +678,10 @@
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
+    overflow: auto;
+    /* Hide scrollbar for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }
 
 .modal-content {
@@ -704,6 +708,10 @@
     color: white;
 }
 
+.modal-body>img {
+    width: 100%;
+}
+
 .modal-footer {
     padding: 30px;
     background-color: black;
@@ -723,6 +731,10 @@
     text-align: center;
     text-decoration: none;
     color: white;
+}
+
+.modal::-webkit-scrollbar {
+    width: 0px;
 }
 
 @media screen and (max-width:1600px){
